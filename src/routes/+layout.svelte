@@ -12,6 +12,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<title>Budget Calculator</title>
 </svelte:head>
 
 <Heading on:openModal={() => (isModalOpen = true)} />
