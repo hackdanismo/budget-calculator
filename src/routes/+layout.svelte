@@ -33,15 +33,6 @@
     open={isModalOpen}
     on:close={() => (isModalOpen = false)}
 >
-    <div>
-        <Button
-            variant="secondary"
-            on:click={() => (isModalOpen = false)}
-        >
-            Cancel
-        </Button>
-    </div>
-
 	<div>
 		<input
 			type="text"
@@ -49,12 +40,20 @@
 			bind:value={modalValue}
 		/>
 		
-		<Button
-			variant="primary"
-			on:click={saveFromModal}
-		>
-			Save
-		</Button>
+		<div class="flex gap-2 justify-end">
+			<Button
+				variant="primary"
+				on:click={saveFromModal}
+			>
+				Save
+			</Button>
+			<Button
+				variant="secondary"
+				on:click={() => (isModalOpen = false)}
+			>
+				Cancel
+			</Button>
+		</div>
 	</div>
 </Modal>
 
