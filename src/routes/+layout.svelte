@@ -8,6 +8,13 @@
 
 	let { children } = $props();
 	let isModalOpen = $state(false);
+	let modalValue = $state("");
+	let savedValue = $state("");
+
+	function saveFromModal() {
+		savedValue = modalValue;
+		isModalOpen = false;
+	}
 </script>
 
 <svelte:head>
@@ -34,10 +41,33 @@
             Cancel
         </Button>
     </div>
+
+	<div>
+		<input
+			type="text"
+			placeholder="Enter a value"
+			bind:value={modalValue}
+		/>
+		
+		<Button
+			variant="primary"
+			on:click={saveFromModal}
+		>
+			Save
+		</Button>
+	</div>
 </Modal>
 
 <main role="main">
 	{@render children()}
+
+	{#if savedValue}
+		<div class="container">
+			<p class="mt-6">
+				Entered value: <strong>{savedValue}</strong>
+			</p>
+		</div>
+	{/if}
 </main>
 
 <footer>
