@@ -21,9 +21,9 @@
     }
 </script>
 
-{#if open}
-    <svelte:window on:keydown={handleKeydown} />
+<svelte:window on:keydown={handleKeydown} />
 
+{#if open}
     <div
         class="fixed inset-0 z-40 flex items-center justify-center bg-black/50"
         on:click={handleOverlayClick}
