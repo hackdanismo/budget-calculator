@@ -6,7 +6,9 @@
     }
 </script>
 
-<h1>Budget Calculator</h1>
+<div class="container"> 
+    <h1>Budget Calculator</h1>
+</div>
 
 <!--<Button
     variant="primary"

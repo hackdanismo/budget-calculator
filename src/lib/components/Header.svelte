@@ -9,19 +9,22 @@
     }
 </script>
 
-<header role="banner">
+<header class="header" role="banner">
     <div class="container">
-        <nav aria-label="Main navigation">
-            <ul>
-                <li>
-                    <Button
-                        variant="primary"
-                        on:click={openModal}
-                    >
-                        Open modal
-                    </Button>
-                </li>
-            </ul>
-        </nav>
+        <div class="header__content">
+            <div></div>
+            <nav aria-label="Main navigation">
+                <ul>
+                    <li>
+                        <Button
+                            variant="primary"
+                            on:click={openModal}
+                        >
+                            Add
+                        </Button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </header>

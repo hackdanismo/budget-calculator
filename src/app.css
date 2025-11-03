@@ -10,3 +10,16 @@
     /* Horizontal padding to provide spacing on smaller screens */
     padding: 0 1rem;
 }
+
+.header {
+    /* Vertical spacing between the top and bottom of the header */
+    padding: 1rem 0;
+}
+
+.header__content {
+    display: flex;
+    /* Horizontal spacing between the navigation bar and left content */
+    justify-content: space-between;
+    /* Vertically align items within the header */
+    align-items: center;
+}

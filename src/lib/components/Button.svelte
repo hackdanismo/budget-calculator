@@ -18,7 +18,7 @@
     {type}
     on:click={handleClick}
     disabled={disabled}
-    class={`px-4 py-2 rounded-lg font-semibold transition-colors duration-150
+    class={`px-4 py-2 rounded-lg font-semibold transition-colors duration-150 cursor-pointer
         ${variant === 'primary' && 'bg-blue-600 text-white hover:bg-blue-700'}
         ${variant === 'secondary' && 'bg-gray-200 text-gray-800 hover:bg-gray-300'}
         ${variant === 'danger' && 'bg-red-500 text-white hover:bg-red-600'}

@@ -40,5 +40,7 @@
 </main>
 
 <footer>
-	Page Footer
+	<div class="container">
+		Page Footer
+	</div>
 </footer>
