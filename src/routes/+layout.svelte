@@ -9,4 +9,14 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-{@render children()}
+<header>
+	Page header
+</header>
+
+<main role="main">
+	{@render children()}
+</main>
+
+<footer>
+	Page Footer
+</footer>
